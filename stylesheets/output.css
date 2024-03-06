@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Kalam";
+}
+
+.welcome-container {
+  text-align: center;
+  font-size: xx-large;
+  margin: 0;
+  padding: 20% 20% 0 20%;
+}
+.welcome-container .enter {
+  text-align: center;
+  background-color: #BBAE97;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin: 0 44% 0 44%;
+  padding: 5px 0 5px 0;
+}
+
+.contents {
+  text-align: center;
+  font-size: xx-large;
+  padding: 13% 16% 0 16%;
+}
+.contents .contents-container {
+  display: grid;
+  grid-template-columns: 35% 35% 35%;
+  margin-top: 8%;
+}
+.contents .about-me {
+  background-color: rgba(175, 39, 39, 0.678);
+  border-radius: 5px;
+  margin: 10%;
+  padding: 5%;
+}
+.contents .skills {
+  background-color: rgba(20, 119, 20, 0.644);
+  border-radius: 5px;
+  margin: 10%;
+  padding: 5%;
+  text-decoration: none;
+}
+.contents .projects {
+  background-color: #AF805C;
+  border-radius: 5px;
+  margin: 10%;
+  padding: 5%;
+}
+.contents .education {
+  background-color: #BBAE97;
+  border-radius: 5px;
+  margin: 10%;
+  padding: 5%;
+}
+.contents .contact {
+  background-color: #f1c6ba;
+  border-radius: 5px;
+  margin: 10%;
+  padding: 5%;
+}
+.contents .cv {
+  background-color: rgba(90, 156, 163, 0.7607843137);
+  border-radius: 5px;
+  margin: 10%;
+  padding: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  .welcome-container {
+    text-align: center;
+    margin: 0;
+    padding: 30% 0 15% 0;
+  }
+  .welcome-container .enter {
+    margin: 0 30% 0 30%;
+  }
+  .contents {
+    text-align: center;
+    font-size: large;
+  }
+  .contents .contents-container {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 8%;
+  }
+  .contents .about-me {
+    border-radius: 8px;
+    margin: 6%;
+    padding: 5%;
+  }
+  .contents .skills {
+    border-radius: 8px;
+    margin: 6%;
+    padding: 5%;
+  }
+  .contents .projects {
+    border-radius: 8px;
+    margin: 6%;
+    padding: 5%;
+  }
+  .contents .education {
+    border-radius: 8px;
+    margin: 6%;
+    padding: 5%;
+  }
+  .contents .contact {
+    border-radius: 8px;
+    margin: 6%;
+    padding: 5%;
+  }
+  .contents .cv {
+    border-radius: 8px;
+    margin: 6%;
+    padding: 5%;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
