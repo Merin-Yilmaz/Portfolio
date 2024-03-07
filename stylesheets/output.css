@@ -66,6 +66,96 @@
   padding: 5%;
 }
 
+.about-me {
+  text-align: center;
+  font-size: xx-large;
+}
+.about-me h1 {
+  margin: 0;
+}
+.about-me .about-me-container {
+  font-size: xx-large;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 8% 20% 0% 20%;
+}
+.about-me .about-me-container .about-description {
+  font-size: smaller;
+}
+.about-me .about-me-container .profile {
+  border-radius: 100%;
+}
+
+.skills {
+  text-align: center;
+  font-size: xx-large;
+}
+.skills h1 {
+  margin: 0;
+  padding-top: 15%;
+}
+.skills .skills-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 2%;
+}
+.skills .icons {
+  padding: 1% 5% 0 0;
+}
+
+.education {
+  font-size: xx-large;
+}
+.education h1 {
+  text-align: center;
+  margin: 0;
+  padding-top: 9%;
+  margin-bottom: 30px;
+}
+.education .education-container {
+  position: absolute;
+  left: 40%;
+  align-items: end;
+}
+.education h4 {
+  padding: 0;
+  margin-bottom: 0;
+}
+.education h5 {
+  margin: 0;
+}
+
+.contact {
+  font-size: xx-large;
+}
+.contact h1 {
+  text-align: center;
+  margin: 0;
+  padding: 10%;
+}
+.contact .contact-container {
+  display: grid;
+  grid-template-columns: 100%;
+  position: absolute;
+  left: 40%;
+}
+.contact .contact-container .number {
+  position: relative;
+  bottom: 40px;
+}
+.contact .contact-container .linkedin {
+  position: relative;
+  top: 20px;
+}
+.contact .contact-container .github {
+  position: relative;
+  top: 90px;
+}
+.contact .contact-container .email {
+  position: relative;
+  top: 160px;
+}
+
 @media only screen and (max-width: 600px) {
   .welcome-container {
     text-align: center;
@@ -113,6 +203,63 @@
     border-radius: 8px;
     margin: 6%;
     padding: 5%;
+  }
+  .about-me h1 {
+    margin-bottom: -10%;
+  }
+  .about-me .about-me-container {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .about-me .about-me-container .about-description {
+    font-size: 48%;
+  }
+  .about-me .about-me-container .profile {
+    width: 100%;
+    height: auto;
+  }
+  .skills h1 {
+    margin-bottom: -10%;
+  }
+  .skills .skills-container {
+    display: block;
+    grid-template-columns: 100%;
+  }
+  .skills li {
+    font-size: 50%;
+    margin: 0;
+  }
+  .skills ul {
+    padding-inline-end: 17px;
+  }
+  .skills .icons {
+    width: 15vw;
+    height: 8vh;
+    padding-left: 5%;
+  }
+  .education {
+    text-align: center;
+  }
+  .education .education-container {
+    position: relative;
+    left: 0;
+  }
+  .contact {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .contact h1 {
+    margin: 0;
+  }
+  .contact .contact-container {
+    text-align: center;
+    font-size: 59%;
+    padding: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 3%;
   }
 }
 

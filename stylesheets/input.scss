@@ -67,6 +67,96 @@
     }
 }
 
+.about-me {
+    text-align: center;
+    font-size: xx-large;
+    h1 {
+        margin: 0
+    }
+    .about-me-container {
+        font-size: xx-large;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 8% 20% 0% 20%;
+        .about-description {
+            font-size: smaller;
+        }
+        .profile {
+            border-radius: 100%;
+        }
+    }
+}
+
+.skills {
+    text-align: center;
+    font-size: xx-large;
+   h1 {
+    margin: 0;
+    padding-top: 15% ;
+   }
+   .skills-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 2%;
+   }
+   .icons {
+    padding: 1% 5% 0 0;
+   }
+}
+
+.education {
+    font-size: xx-large;
+    h1 {
+        text-align: center;
+        margin: 0;
+        padding-top: 9%;
+        margin-bottom: 30px;
+    }
+    .education-container {
+        position: absolute;
+        left: 40%;
+        align-items: end;
+    }
+    h4 {
+        padding: 0;
+        margin-bottom: 0;
+    }
+    h5 {
+        margin: 0;
+    }
+}
+
+.contact {
+    font-size: xx-large;
+    h1 {
+        text-align: center;
+        margin: 0;
+        padding: 10%;
+    }
+    .contact-container {
+        display: grid;
+        grid-template-columns: 100%;
+        position: absolute;
+        left: 40%;
+        .number {
+            position: relative;
+            bottom: 40px;
+        }
+        .linkedin {
+            position: relative;
+            top: 20px;
+        }
+        .github {
+            position: relative;
+            top: 90px;
+        }
+        .email {
+            position: relative;
+            top: 160px;
+        }
+    }
+}
+
 
 @media only screen and (max-width: 600px) {
     .welcome-container {
@@ -115,6 +205,71 @@
             border-radius: 8px;
             margin: 6%;
             padding: 5%;
+        }
+    }
+
+    .about-me {
+        h1 {
+            margin-bottom: -10%; 
+        }
+        .about-me-container {
+            display: grid;
+            grid-template-columns: 100%;
+            .about-description {
+                font-size: 48%;
+            }
+            .profile {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .skills {
+        h1 {
+            margin-bottom: -10%; 
+        }
+        .skills-container {
+            display: block;
+            grid-template-columns: 100%;
+        }
+        li {
+            font-size: 50%;
+            margin: 0;
+        }
+        ul {
+            padding-inline-end: 17px;
+        }
+        .icons {
+            width: 15vw;
+            height: 8vh;
+            padding-left: 5%;           
+        }
+    }
+
+    .education {
+        text-align: center;
+        .education-container {
+            position: relative;
+            left: 0;
+        }
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 0;
+        padding: 0;
+        h1 {
+            margin: 0;
+        }
+        .contact-container {
+            text-align: center;
+            font-size: 59%;
+            padding: 0;
+            position: absolute;
+            bottom: 50%;
+            left: 3%;
         }
     }
 }
