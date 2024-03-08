@@ -113,16 +113,17 @@
 .skills {
     text-align: center;
     font-size: xx-large;
-   h1 {
-    position: relative;
-    top: 60%;
-   }
-   .skills-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding-top: 2%;
-    position: relative;
-    top: 30%;
+    h1 {
+        position: absolute;
+        top: 15%;
+        left: 45%;
+    }
+    .skills-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-top: 2%;
+        position: absolute;
+        top: 35%;
    }
    .icons {
     padding: 1% 5% 0 0;
@@ -131,6 +132,52 @@
 
 .projects {
     font-size: xx-large;
+    text-align: center;
+    h1 {
+        margin: 0;
+        position: absolute;
+        top: 20%;
+        left: 45%;
+    }
+    .projects-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        position: absolute;
+        font-size: 70%;
+        width: 70%;
+        left: 15%;
+        top: 30%;
+        h3 {
+            margin-bottom: 5px;
+        }
+        article {
+            margin: 0;
+        }
+        img {
+            width: 38%;
+            border-radius: 5%;
+            border: black 2px solid;
+        }
+        .github-project {
+            width: 3%;
+            border: none;
+            display: flex;
+            position: absolute;
+            top: 20px;
+        }
+        .tech-list {
+            font-size: large;
+            margin: -15px 0 -15px 0;
+            div {
+                display: inline-flex;
+                background-color: #f1c6ba;
+                border: #AF805C 2px solid;
+                border-radius: 10%;
+                margin: 5px 5px 0 0;
+                padding: 0 4px 0 4px;
+            }
+        }
+    }
 }
 
 .education {
@@ -199,22 +246,24 @@
 
 
 @media only screen and (max-width: 600px) {
-    
+    #layout {
+        background-position-y: 0 !important;
+    }
+
     .home {
         background-position-y: 0px;
-        h1 {
-            margin: 0;
-            position: relative;
-            right: 15%;
-        }
         .welcome-container {
             text-align: center;
             margin: 0;
             padding: 30% 0 15% 0;
-            position: relative;
-            right: 15%;
+            position: absolute;
+            left: 0%;
+            top: 0%;
             .enter {
+                position: absolute;
+                top: 82%;
                 margin: 0 30% 0 30%;
+                padding-right: 10px;
             }
         }
     }
@@ -223,6 +272,8 @@
         text-align: center;
         font-size: large;
         h1 {
+            position: relative;
+            top: 20%;
             margin-bottom: 0;
         }
         .contents-container {
@@ -254,6 +305,8 @@
 
     .about-me {
         h1 {
+            position: relative;
+            top: 5px;
             margin-bottom: -10%; 
         }
         .about-me-container {
@@ -271,11 +324,15 @@
 
     .skills {
         h1 {
-            margin-bottom: -10%; 
+            position: relative;
+            left: 1px;
+            top: 5px;
+            margin: 0;
         }
         .skills-container {
             display: block;
             grid-template-columns: 100%;
+            position: relative;
         }
         li {
             font-size: 50%;
@@ -283,6 +340,7 @@
         }
         ul {
             padding-inline-end: 17px;
+            padding-left: 35px;
         }
         .icons {
             width: 15vw;
@@ -293,26 +351,36 @@
 
     .education {
         text-align: center;
+        background-position-y: 0px;
+        h1 {
+            position: relative;
+            top: 5px;
+            margin-bottom: -10%;
+        }
         .education-container {
             position: relative;
+            top: 5%;
             left: 0;
         }
     }
-
+    
     .contact {
         display: grid;
         grid-template-columns: 100%;
         margin: 0;
         padding: 0;
+        background-position-y: 0;
         h1 {
             margin: 0;
+            position: relative;
+            top: 5px;
         }
         .contact-container {
             text-align: center;
             font-size: 59%;
             padding: 0;
             position: absolute;
-            bottom: 45%;
+            top: 30%;
             left: 1%;
             img {
                 display: block;
@@ -324,6 +392,57 @@
             span {
                 height: 50px;
             }
+        }
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 0;
+        background-position-y: 0;
+        h1 {
+            margin-bottom: 5px;
+            position: relative;
+            left: 0%;
+        }
+        .projects-container {
+            display: grid;
+            grid-template-columns: 100%;
+            position: relative;
+            top: 20%;
+            left: 0%;
+            margin-top: -30%;
+            margin-bottom: -80%;
+            width: 100%;
+            img {
+                width: 40%;
+                border-radius: 8%;
+                border: black 2px solid;
+                display: block;
+                position: relative;
+                left: 30%;
+            }
+            h3 {
+                margin: 0;
+            }
+            article {
+                padding-bottom: 15%;
+                font-size: large;
+            }
+            p {
+                margin: 10px 0 10px 0;;
+            }
+            .tech-list {
+                div {
+                    font-size: 80%;
+                }
+            }
+            .github-project {
+                width: 10%;
+                position: relative;
+                left: 45%;
+            } 
+            
         }
     }
 }

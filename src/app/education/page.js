@@ -2,7 +2,7 @@ import background from '@/app/education/education.png'
 
 const Education = () => {
     return (
-        <main className='education' style={{
+        <main className='education' id='background' style={{
             backgroundImage: `url(${background.src})`,
             backgroundSize: "cover",
             height: "100vh",
