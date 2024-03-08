@@ -17,12 +17,11 @@ const Skills = () => {
             </ul>   
         <div className="skills-icons">
             {iconList.map((icon, index) => (
-                <Image key={index} className='icons' src={icon.default} alt={`image-${index}`} width={80} height={100}/>
+                <Image key={index} className='icons' src={icon.default} alt={`image-${index}`} width={80} height={100} />
                 ))}
-
         </div>
-                </div>
-        </main>
+        </div>
+     </main>
     )
 }
 

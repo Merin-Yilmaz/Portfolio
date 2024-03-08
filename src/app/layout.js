@@ -13,7 +13,8 @@ export default function RootLayout({ children }) {
           height: "100vh",
           width: "100%",
           padding:0,
-          margin: 0
+          margin: 0,
+          backgroundPositionY: "-100px",
         }}>{children}</body>
     </html>
   );

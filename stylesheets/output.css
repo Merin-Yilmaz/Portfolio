@@ -3,19 +3,33 @@
   font-family: "Kalam";
 }
 
-.welcome-container {
+.home {
+  background-position-y: -100px;
+}
+.home .welcome-container {
   text-align: center;
   font-size: xx-large;
   margin: 0;
   padding: 20% 20% 0 20%;
+  position: absolute;
+  position: absolute;
+  left: 15%;
+  top: -12%;
 }
-.welcome-container .enter {
-  text-align: center;
+.home .welcome-container .enter {
   background-color: #BBAE97;
   border-radius: 5px;
   border: 2px solid black;
   margin: 0 44% 0 44%;
-  padding: 5px 0 5px 0;
+  width: 20%;
+  padding: 5px;
+  position: relative;
+  right: 30px;
+  top: -25px;
+}
+.home .welcome-container .name {
+  position: relative;
+  top: -25px;
 }
 
 .contents {
@@ -23,10 +37,14 @@
   font-size: xx-large;
   padding: 13% 16% 0 16%;
 }
+.contents h1 {
+  position: relative;
+  top: -92px;
+}
 .contents .contents-container {
   display: grid;
   grid-template-columns: 35% 35% 35%;
-  margin-top: 8%;
+  margin-top: -5%;
 }
 .contents .about-me {
   background-color: rgba(175, 39, 39, 0.678);
@@ -65,6 +83,9 @@
   margin: 10%;
   padding: 5%;
 }
+.contents .cv .download {
+  display: inline;
+}
 
 .about-me {
   text-align: center;
@@ -72,6 +93,8 @@
 }
 .about-me h1 {
   margin: 0;
+  position: relative;
+  top: 5%;
 }
 .about-me .about-me-container {
   font-size: xx-large;
@@ -91,31 +114,41 @@
   font-size: xx-large;
 }
 .skills h1 {
-  margin: 0;
-  padding-top: 15%;
+  position: relative;
+  top: 60%;
 }
 .skills .skills-container {
   display: grid;
   grid-template-columns: 50% 50%;
   padding-top: 2%;
+  position: relative;
+  top: 30%;
 }
 .skills .icons {
   padding: 1% 5% 0 0;
 }
 
+.projects {
+  font-size: xx-large;
+}
+
 .education {
   font-size: xx-large;
+  background-position-y: -100px;
 }
 .education h1 {
   text-align: center;
   margin: 0;
   padding-top: 9%;
   margin-bottom: 30px;
+  position: relative;
+  top: -92px;
 }
 .education .education-container {
   position: absolute;
   left: 40%;
   align-items: end;
+  top: 30%;
 }
 .education h4 {
   padding: 0;
@@ -127,9 +160,12 @@
 
 .contact {
   font-size: xx-large;
+  background-position-y: -100px;
 }
 .contact h1 {
   text-align: center;
+  position: relative;
+  top: -80px;
   margin: 0;
   padding: 10%;
 }
@@ -138,6 +174,7 @@
   grid-template-columns: 100%;
   position: absolute;
   left: 40%;
+  top: 40%;
 }
 .contact .contact-container .number {
   position: relative;
@@ -155,54 +192,60 @@
   position: relative;
   top: 160px;
 }
+.contact .contact-container img {
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
-  .welcome-container {
+  .home {
+    background-position-y: 0px;
+  }
+  .home h1 {
+    margin: 0;
+    position: relative;
+    right: 15%;
+  }
+  .home .welcome-container {
     text-align: center;
     margin: 0;
     padding: 30% 0 15% 0;
+    position: relative;
+    right: 15%;
   }
-  .welcome-container .enter {
+  .home .welcome-container .enter {
     margin: 0 30% 0 30%;
   }
   .contents {
     text-align: center;
     font-size: large;
   }
+  .contents h1 {
+    margin-bottom: 0;
+  }
   .contents .contents-container {
     display: grid;
     grid-template-columns: 100%;
-    margin-top: 8%;
+    margin-top: 0;
   }
-  .contents .about-me {
-    border-radius: 8px;
-    margin: 6%;
-    padding: 5%;
-  }
-  .contents .skills {
-    border-radius: 8px;
-    margin: 6%;
-    padding: 5%;
-  }
-  .contents .projects {
-    border-radius: 8px;
-    margin: 6%;
-    padding: 5%;
-  }
-  .contents .education {
-    border-radius: 8px;
-    margin: 6%;
-    padding: 5%;
-  }
-  .contents .contact {
+  .contents .about-me, .contents .skills, .contents .projects, .contents .education, .contents .contact {
     border-radius: 8px;
     margin: 6%;
     padding: 5%;
   }
   .contents .cv {
     border-radius: 8px;
-    margin: 6%;
-    padding: 5%;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 20px;
+    height: 15px;
+  }
+  .contents .cv .download {
+    display: none;
+  }
+  .contents .cv a {
+    position: relative;
+    top: -5px;
   }
   .about-me h1 {
     margin-bottom: -10%;
@@ -258,8 +301,18 @@
     font-size: 59%;
     padding: 0;
     position: absolute;
+    bottom: 45%;
+    left: 1%;
+  }
+  .contact .contact-container img {
+    display: block;
+    position: relative;
+    left: 45%;
     bottom: 50%;
-    left: 3%;
+    width: 10%;
+  }
+  .contact .contact-container span {
+    height: 50px;
   }
 }
 
