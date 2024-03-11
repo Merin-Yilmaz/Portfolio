@@ -32,8 +32,8 @@ const Contents = () => {
                 </Link>
             </div>
             <div className='cv'>
-            <Link href='/cv' style={{ textDecoration: 'none' }}>
-                Download CV
+            <Link href={`/Merin_Yilmaz_CV.pdf`} download="Merin_Yilmaz_CV" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                <div className='download'>Download</div> CV
                 </Link>
             </div>
             </div>

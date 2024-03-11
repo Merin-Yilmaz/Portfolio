@@ -7,13 +7,14 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className} style={{
+      <body className={inter.className} id="layout" style={{
           backgroundImage: `url(${background.src})`,
           backgroundSize: "cover",
           height: "100vh",
           width: "100%",
           padding:0,
-          margin: 0
+          margin: 0,
+          backgroundPositionY: "-100px",
         }}>{children}</body>
     </html>
   );
