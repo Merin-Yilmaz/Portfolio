@@ -1,10 +1,11 @@
 "use client"
 import Link from 'next/link';
+import underline from '../../../public/underline.png'
 
 const Contents = () => {
     return (
         <main className="contents">
-            <h1>Table of Contents</h1>
+            <h1>Table of Contents<img className='underline' src={underline.src}/></h1>
             <div className='contents-container'>
             <div className='about-me'>
                 <Link href="/about-me" style={{ textDecoration: 'none' }}>

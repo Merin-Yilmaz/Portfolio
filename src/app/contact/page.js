@@ -10,7 +10,7 @@ const Contact = () => {
             backgroundImage: `url(${background.src})`,
             backgroundSize: "cover",
             height: "100vh",
-            width: "100vw",
+            width: "100vw"
           }}>
             <h1>Contact</h1>
             <div className='contact-container'>              

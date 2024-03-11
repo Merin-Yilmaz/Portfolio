@@ -1,4 +1,5 @@
 import Image from "next/image";
+import underline from '../../../public/underline.png'
 
 const icons = require.context('../skills/icons', true)
 const iconList = icons.keys().map(icon => icons(icon));
@@ -6,7 +7,7 @@ const iconList = icons.keys().map(icon => icons(icon));
 const Skills = () => {
     return (
         <main className="skills">
-        <h1>Skills</h1>
+        <h1>Skills<img className="underline" src={underline.src}/></h1>
         <div className="skills-container">
             <ul>
             <li>Laboris est cillum quis deserunt consectetur.</li>   
