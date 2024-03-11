@@ -39,7 +39,13 @@
 }
 .contents h1 {
   position: relative;
-  top: -92px;
+  top: -100px;
+}
+.contents .underline {
+  position: absolute;
+  top: 70%;
+  width: 45%;
+  left: 26%;
 }
 .contents .contents-container {
   display: grid;
@@ -114,9 +120,14 @@
   font-size: xx-large;
 }
 .skills h1 {
+  position: relative;
+  top: 100px;
+}
+.skills .underline {
   position: absolute;
-  top: 15%;
-  left: 45%;
+  top: 70%;
+  left: 36%;
+  width: 30%;
 }
 .skills .skills-container {
   display: grid;
@@ -134,10 +145,13 @@
   text-align: center;
 }
 .projects h1 {
-  margin: 0;
+  text-align: center;
+}
+.projects .underline {
   position: absolute;
-  top: 20%;
-  left: 45%;
+  top: 15%;
+  left: 36%;
+  width: 30%;
 }
 .projects .projects-container {
   display: grid;
@@ -177,6 +191,10 @@
   border-radius: 10%;
   margin: 5px 5px 0 0;
   padding: 0 4px 0 4px;
+}
+.projects .projects-container .indigo {
+  height: 70%;
+  width: 70%;
 }
 
 .education {
@@ -273,6 +291,9 @@
     top: 20%;
     margin-bottom: 0;
   }
+  .contents .underline {
+    display: none;
+  }
   .contents .contents-container {
     display: grid;
     grid-template-columns: 100%;
@@ -317,8 +338,11 @@
   .skills h1 {
     position: relative;
     left: 1px;
-    top: 5px;
+    top: 15px;
     margin: 0;
+  }
+  .skills .underline {
+    display: none;
   }
   .skills .skills-container {
     display: block;
@@ -344,7 +368,7 @@
   }
   .education h1 {
     position: relative;
-    top: 5px;
+    top: 15px;
     margin-bottom: -10%;
   }
   .education .education-container {
@@ -357,12 +381,13 @@
     grid-template-columns: 100%;
     margin: 0;
     padding: 0;
-    background-position-y: 0;
+    background-position-y: 0px;
   }
   .contact h1 {
     margin: 0;
+    padding: 0;
     position: relative;
-    top: 5px;
+    top: 15px;
   }
   .contact .contact-container {
     text-align: center;
@@ -393,6 +418,9 @@
     position: relative;
     left: 0%;
   }
+  .projects .underline {
+    display: none;
+  }
   .projects .projects-container {
     display: grid;
     grid-template-columns: 100%;
@@ -410,6 +438,12 @@
     display: block;
     position: relative;
     left: 30%;
+  }
+  .projects .projects-container .indigo {
+    position: relative;
+    left: 15%;
+    width: 70%;
+    height: 70%;
   }
   .projects .projects-container h3 {
     margin: 0;
