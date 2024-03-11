@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
           padding:0,
           margin: 0,
           backgroundPositionY: "-100px",
+          backgroundAttachment: 'fixed'
         }}>{children}</body>
     </html>
   );
