@@ -117,9 +117,6 @@
         }
         .profile {
             border-radius: 100%;
-            width: 70%;
-            height: auto;
-            margin: 0 auto;
         }
     }
 }
@@ -341,18 +338,21 @@
     .about-me {
         h1 {
             position: relative;
-            top: 5px;
+            top: 50px;
             margin-bottom: -10%; 
         }
         .about-me-container {
             display: grid;
             grid-template-columns: 100%;
+            position: relative;
+            top: 50px;
             .about-description {
                 font-size: 48%;
             }
             .profile {
-                width: 100%;
+                width: 70%;
                 height: auto;
+                margin: 0 auto;
             }
         }
     }
@@ -383,7 +383,8 @@
         .icons {
             width: 15vw;
             height: 8vh;
-            padding-left: 5%;           
+            padding-left: 5%;
+                       
         }
     }
 

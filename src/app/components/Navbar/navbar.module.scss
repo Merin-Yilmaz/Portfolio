@@ -135,6 +135,9 @@
             padding: 0;
 
         }
+        ul li {
+            text-align: center;
+        }
     }
 }
 
@@ -143,22 +146,37 @@
         top: -55px;
         width: 40px;
         height: 25px;
+        left: 20px !important;
         cursor: pointer;
         .burgerMenuTrigger {
-            width: 40px;
-            height: 20px;
+            width: 35px !important;
+            height: 20px !important;            
         }
         .burgerMenu {
-            width: 40px;
-            height: 3px;
+            width: 35px !important;
+            height: 3px !important;
         }
         .burgerMenu::after {
-            width: 40px;
-            height: 3px;
+            width: 35px !important;
+            height: 3px !important;
         }
         .burgerMenu::before {
-            width: 40px;
-            height: 3px;
+            width: 35px !important;
+            height: 3px !important;
+        }
+    }
+    .navbar.active {
+        .navigation {
+            left: 30px;
+        }
+        .burgerMenu {
+            width: 0px !important;
+        }
+        .content {
+        left: -30px;
+        }
+        ul li {
+            text-align: center;
         }
     }
 }

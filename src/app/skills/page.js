@@ -20,7 +20,7 @@ const Skills = () => {
             <li>Laboris est cillum quis deserunt consectetur.</li>   
             <li>Laboris est cillum quis deserunt consectetur.</li>   
             </ul>   
-        <motion.div initial={{ x: 20, opacity: 0}} animate={{ x: 20, opacity: 1}} transition={{ ease: 'easeInOut', duration: 0.85}} className="skills-icons">
+        <motion.div initial={{ x: 0, opacity: 0}} animate={{ x: 0, opacity: 1}} transition={{ ease: 'easeInOut', duration: 0.85}} className="skills-icons">
             {iconList.map((icon, index) => (
                 <Image key={index} className='icons' src={icon.default} alt={`image-${index}`} width={80} height={100} />
                 ))}
