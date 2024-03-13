@@ -1,16 +1,19 @@
+'use client'
 import tipper from '@/app/projects/tipper.png'
 import ncnews from '@/app/projects/ncnews.png'
 import github from '@/app/contact/icons/github.png'
 import indigo from '@/app/projects/indigo.png'
 import underline from '../../../public/underline.png'
+import Navbar from '../components/Navbar/Navbar'
+import { motion } from 'framer-motion'
 
 const Projects = () => {
     return (
         <main className="projects">
+            <Navbar />
         <h1>Projects<img className="underline" src={underline.src}/></h1>
-
         <div className="projects-container">
-            <article><h3>Tipper</h3><a href='https://tipper.merin-yilmaz.co.uk/' target='_blank'><img src={tipper.src}/></a>
+            <motion.article whileHover={{ scale: 1.1}} whileTap={{ scale: 0.9}}><h3>Tipper</h3><a href='https://tipper.merin-yilmaz.co.uk/' target='_blank'><img src={tipper.src}/></a>
             <p>Cashless tipping mobile web-app</p>
             <div className='tech-list'>
                 <div>Node.js</div>
@@ -27,8 +30,8 @@ const Projects = () => {
                 <div>Vercel</div>
             </div>
             <a href='https://github.com/Tipper-final-project' target='_blank'><img className='github-project' src={github.src}/></a>
-            </article>
-            <article><h3>NC News</h3><a href='https://myncnew.netlify.app/' target='_blank'><img src={ncnews.src}/></a>
+            </motion.article>
+            <motion.article whileHover={{ scale: 1.1}} whileTap={{ scale: 0.9}}><h3>NC News</h3><a href='https://myncnew.netlify.app/' target='_blank'><img src={ncnews.src}/></a>
             <p>Social news forum site with articles served up from an API I created</p>
             <div className='tech-list'>
                 <div>Node.js</div>
@@ -50,13 +53,14 @@ const Projects = () => {
                 <div>Netlify</div>
             </div>
             <a href='https://github.com/Merin-Yilmaz/NC-News-FE' target='_blank'><img className='github-project' src={github.src}/></a>
-            </article>
-            <article><h3>Indigo Energy</h3><a href='https://dev.indigo-energy.co.uk/' target='_blank'><img className='indigo' src={indigo.src}/></a>
+            </motion.article>
+            <motion.article whileHover={{ scale: 1.1}} whileTap={{ scale: 0.9}}><h3>Indigo Energy</h3><a href='https://dev.indigo-energy.co.uk/' target='_blank'><img className='indigo' src={indigo.src}/></a>
             <p>Solar Power installation company site</p>
             <div className='tech-list'>
                 <div>Wordpress</div>
                 <div>CSS</div>
-            </div>            </article>
+            </div>            
+            </motion.article>
         </div>
         </main>
     )

@@ -1,6 +1,7 @@
 import background from '../about-me/about-me.png';
 import Image from 'next/image';
 import profile from '@/app/about-me/profile.jpeg'
+import Navbar from '@/app/components/Navbar/Navbar'
 
 const AboutMe = () => {
     return (
@@ -11,6 +12,7 @@ const AboutMe = () => {
             height: "100vh",
             width: "100vw"
           }}>
+            <Navbar />
             <h1>About Me</h1>
             <div className='about-me-container'>
             <Image className='profile' src={profile}  width={300} height={350} alt='Picture of Merin'/>

@@ -24,11 +24,16 @@
             padding: 5px;
             position: relative;
             right: 30px;
-            top: -25px;
+            top: -35px;
         }
         .name {
             position: relative;
-            top: -25px;
+            top: -45px;
+        }
+        .jobtitle {
+            position: relative;
+            top: -95px;
+
         }
     }
 }
@@ -259,9 +264,15 @@
         img {
             display: none;
         }
+        a {
+            color: #3b291a;
+        }
+        a:hover {
+            color: #997d68;
+            transition: 0.25s color;
+        }
     }
 }
-
 
 @media only screen and (max-width: 600px) {
     #layout {
@@ -276,10 +287,10 @@
             padding: 30% 0 15% 0;
             position: absolute;
             left: 0%;
-            top: 0%;
+            top: -6%;
             .enter {
                 position: absolute;
-                top: 82%;
+                top: 75%;
                 margin: 0 30% 0 30%;
                 padding-right: 10px;
             }
@@ -327,18 +338,21 @@
     .about-me {
         h1 {
             position: relative;
-            top: 5px;
+            top: 50px;
             margin-bottom: -10%; 
         }
         .about-me-container {
             display: grid;
             grid-template-columns: 100%;
+            position: relative;
+            top: 50px;
             .about-description {
                 font-size: 48%;
             }
             .profile {
-                width: 100%;
+                width: 70%;
                 height: auto;
+                margin: 0 auto;
             }
         }
     }
@@ -369,7 +383,8 @@
         .icons {
             width: 15vw;
             height: 8vh;
-            padding-left: 5%;           
+            padding-left: 5%;
+                       
         }
     }
 
