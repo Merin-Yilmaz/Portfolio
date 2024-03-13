@@ -2,8 +2,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 10%;
-    padding: 0 10vw;
+    width: 180px;
     background-color: #AF805C;
     height: 0;
     position: absolute;
@@ -23,7 +22,7 @@
         width: 55px;
         height: 25px;
         position: relative;
-        right: -40%;
+        left: 50px;
         cursor: pointer;
         .burgerMenuTrigger {
             content: '';
@@ -72,21 +71,30 @@
     }
     .content {
         position: absolute;
-        top: 30vh;
+        top: 150px;
         display: none;
         ul {
             list-style: none;
+            margin-block-start: 0;
+            padding-inline-start: 0;
+            width:180px;
             li {
                 padding: 1rem 0;
+                width:180px;
             }
             a {
-                font-size: 3rem;
-                color: #BBAE97;
+                font-size: 24px;
+                color: #ffffff;
                 transition: 0.25s color;
+                text-decoration: none;
+                padding: 0;
             }
             a:hover {
                 color: #f1c6ba;
                 transition: 0.25s color;
+                border: black 2px solid;
+                border-radius: 5%;
+                padding: 10px
             }
         }
     }
@@ -100,6 +108,7 @@
     .navigation {
         .burgerMenuContainer {
             .burgerMenu {
+                right:0;
                 width: 0;
                 background-color: #f1c6ba;
                 transition: 0.25s width ease-in-out, 0.25s background-color ease-in-out;
@@ -122,5 +131,34 @@
     }
     .content {
         display: initial;
+        a {
+            padding: 0;
+
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .burgerMenuContainer {
+        top: -55px;
+        width: 40px;
+        height: 25px;
+        cursor: pointer;
+        .burgerMenuTrigger {
+            width: 40px;
+            height: 20px;
+        }
+        .burgerMenu {
+            width: 40px;
+            height: 3px;
+        }
+        .burgerMenu::after {
+            width: 40px;
+            height: 3px;
+        }
+        .burgerMenu::before {
+            width: 40px;
+            height: 3px;
+        }
     }
 }

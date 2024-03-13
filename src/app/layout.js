@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "../../stylesheets/output.css";
-import background from '../../public/background.png'
+import background from '../../public/background.png';
 
 const inter = Inter({ subsets: ["latin"] });
 

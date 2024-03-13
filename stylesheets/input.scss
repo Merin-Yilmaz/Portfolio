@@ -24,11 +24,16 @@
             padding: 5px;
             position: relative;
             right: 30px;
-            top: -25px;
+            top: -35px;
         }
         .name {
             position: relative;
-            top: -25px;
+            top: -45px;
+        }
+        .jobtitle {
+            position: relative;
+            top: -95px;
+
         }
     }
 }
@@ -112,6 +117,9 @@
         }
         .profile {
             border-radius: 100%;
+            width: 70%;
+            height: auto;
+            margin: 0 auto;
         }
     }
 }
@@ -259,6 +267,13 @@
         img {
             display: none;
         }
+        a {
+            color: #3b291a;
+        }
+        a:hover {
+            color: #997d68;
+            transition: 0.25s color;
+        }
     }
 }
 
@@ -275,10 +290,10 @@
             padding: 30% 0 15% 0;
             position: absolute;
             left: 0%;
-            top: 0%;
+            top: -6%;
             .enter {
                 position: absolute;
-                top: 82%;
+                top: 75%;
                 margin: 0 30% 0 30%;
                 padding-right: 10px;
             }

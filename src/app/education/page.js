@@ -1,4 +1,5 @@
 import background from '@/app/education/education.png'
+import Navbar from '../components/Navbar/Navbar';
 
 const Education = () => {
     return (
@@ -8,6 +9,7 @@ const Education = () => {
             height: "100vh",
             width: "100vw",
           }}>
+            <Navbar />
             <h1>Education</h1>
             <div className='education-container'>
               <h4>Lorem Ipsum</h4>

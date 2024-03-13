@@ -17,6 +17,7 @@ const Home = () => {
       <Link href='/contents' style={{ textDecoration: 'none' }}>Enter</Link>
       </div>
       <h5 className='name'>Merin Yilmaz</h5>
+      <h5 className='jobtitle'>Junior Software Developer</h5>
       </div>
     </main>
   );

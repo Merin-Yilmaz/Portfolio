@@ -25,11 +25,15 @@
   padding: 5px;
   position: relative;
   right: 30px;
-  top: -25px;
+  top: -35px;
 }
 .home .welcome-container .name {
   position: relative;
-  top: -25px;
+  top: -45px;
+}
+.home .welcome-container .jobtitle {
+  position: relative;
+  top: -95px;
 }
 
 .contents {
@@ -113,6 +117,9 @@
 }
 .about-me .about-me-container .profile {
   border-radius: 100%;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .skills {
@@ -260,6 +267,13 @@
 .contact .contact-container img {
   display: none;
 }
+.contact .contact-container a {
+  color: #3b291a;
+}
+.contact .contact-container a:hover {
+  color: #997d68;
+  transition: 0.25s color;
+}
 
 @media only screen and (max-width: 600px) {
   #layout {
@@ -274,11 +288,11 @@
     padding: 30% 0 15% 0;
     position: absolute;
     left: 0%;
-    top: 0%;
+    top: -6%;
   }
   .home .welcome-container .enter {
     position: absolute;
-    top: 82%;
+    top: 75%;
     margin: 0 30% 0 30%;
     padding-right: 10px;
   }
