@@ -4,6 +4,7 @@ import linkedin from '@/app/contact/icons/linkedin.png'
 import github from '@/app/contact/icons/github.png'
 import email from '@/app/contact/icons/email.png'
 import Navbar from '../components/Navbar/Navbar'
+import HomeNav from '../components/HomeNav/HomeNav'
 
 const Contact = () => {
     return (
@@ -14,6 +15,7 @@ const Contact = () => {
             width: "100vw"
           }}>
             <Navbar />
+            <HomeNav />
             <h1>Contact</h1>
             <div className='contact-container'>              
               <span className='number'><a href='Tel: +447809471368'><img src={phone.src}/>+447809 471 368</a></span>              

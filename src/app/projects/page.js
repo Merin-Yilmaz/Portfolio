@@ -6,11 +6,13 @@ import indigo from '@/app/projects/indigo.png'
 import underline from '../../../public/underline.png'
 import Navbar from '../components/Navbar/Navbar'
 import { motion } from 'framer-motion'
+import HomeNav from '../components/HomeNav/HomeNav'
 
 const Projects = () => {
     return (
         <main className="projects">
             <Navbar />
+            <HomeNav />
         <h1>Projects<img className="underline" src={underline.src}/></h1>
         <div className="projects-container">
             <motion.article whileHover={{ scale: 1.1}} whileTap={{ scale: 0.9}}><h3>Tipper</h3><a href='https://tipper.merin-yilmaz.co.uk/' target='_blank'><img src={tipper.src}/></a>

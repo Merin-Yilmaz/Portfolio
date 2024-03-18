@@ -114,6 +114,8 @@
         margin: 8% 20% 0% 20%;
         .about-description {
             font-size: smaller;
+            position: relative;
+            bottom: 40px;
         }
         .profile {
             border-radius: 100%;
@@ -144,6 +146,9 @@
    .icons {
     padding: 1% 5% 0 0;
    }
+   ul {
+    list-style: none
+   };
 }
 
 .projects {
@@ -274,6 +279,16 @@
     }
 }
 
+.homenav {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    right: 10%;
+    top: 6%;
+    z-index: 100;
+}
+
 @media only screen and (max-width: 600px) {
     #layout {
         background-position-y: 0 !important;
@@ -348,9 +363,10 @@
             top: 50px;
             .about-description {
                 font-size: 48%;
+                bottom: 10px;
             }
             .profile {
-                width: 70%;
+                width: 60%;
                 height: auto;
                 margin: 0 auto;
             }
@@ -373,7 +389,7 @@
             position: relative;
         }
         li {
-            font-size: 50%;
+            font-size: 60%;
             margin: 0;
         }
         ul {
@@ -400,6 +416,7 @@
             position: relative;
             top: 5%;
             left: 0;
+            padding: 0 10px 0 10px;;
         }
     }
     
@@ -412,8 +429,9 @@
         h1 {
             margin: 0;
             padding: 0;
-            position: relative;
-            top: 15px;
+            position: absolute;
+            top: 50px;
+            right: 85px;
         }
         .contact-container {
             text-align: center;
@@ -493,5 +511,12 @@
             } 
             
         }
+    }
+
+    .homenav {
+        top: 20px;
+        right: 18px;
+        width: 40px;
+        height: 40px;
     }
 }

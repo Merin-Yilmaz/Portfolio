@@ -114,6 +114,8 @@
 }
 .about-me .about-me-container .about-description {
   font-size: smaller;
+  position: relative;
+  bottom: 40px;
 }
 .about-me .about-me-container .profile {
   border-radius: 100%;
@@ -142,6 +144,9 @@
 }
 .skills .icons {
   padding: 1% 5% 0 0;
+}
+.skills ul {
+  list-style: none;
 }
 
 .projects {
@@ -272,6 +277,16 @@
   transition: 0.25s color;
 }
 
+.homenav {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: absolute;
+  right: 10%;
+  top: 6%;
+  z-index: 100;
+}
+
 @media only screen and (max-width: 600px) {
   #layout {
     background-position-y: 0 !important;
@@ -343,9 +358,10 @@
   }
   .about-me .about-me-container .about-description {
     font-size: 48%;
+    bottom: 10px;
   }
   .about-me .about-me-container .profile {
-    width: 70%;
+    width: 60%;
     height: auto;
     margin: 0 auto;
   }
@@ -364,7 +380,7 @@
     position: relative;
   }
   .skills li {
-    font-size: 50%;
+    font-size: 60%;
     margin: 0;
   }
   .skills ul {
@@ -389,6 +405,7 @@
     position: relative;
     top: 5%;
     left: 0;
+    padding: 0 10px 0 10px;
   }
   .contact {
     display: grid;
@@ -400,8 +417,9 @@
   .contact h1 {
     margin: 0;
     padding: 0;
-    position: relative;
-    top: 15px;
+    position: absolute;
+    top: 50px;
+    right: 85px;
   }
   .contact .contact-container {
     text-align: center;
@@ -476,6 +494,12 @@
     width: 10%;
     position: relative;
     left: 45%;
+  }
+  .homenav {
+    top: 20px;
+    right: 18px;
+    width: 40px;
+    height: 40px;
   }
 }
 
