@@ -18,10 +18,10 @@ const Contact = () => {
             <HomeNav />
             <h1>Contact</h1>
             <div className='contact-container'>              
-              <span className='number'><a href='Tel: +447809471368'><img src={phone.src}/>+447809 471 368</a></span>              
-              <span className='linkedin'><a href='https://www.linkedin.com/in/merin-yilmaz/'><img src={linkedin.src}/>Merin-Yilmaz</a></span>              
-              <span className='github'><a href='https://github.com/Merin-Yilmaz'><img src={github.src}/>Merin-Yilmaz</a></span>              
-              <span className='email'><a href='mailto: merin.yilmaz@gmail.com'><img src={email.src}/>merin.yilmaz@gmail.com</a></span>
+              <span className='number'><a href='Tel: +447809471368' target="_blank"><img src={phone.src}/>+447809 471 368</a></span>              
+              <span className='linkedin'><a href='https://www.linkedin.com/in/merin-yilmaz/' target="_blank"><img src={linkedin.src}/>Merin-Yilmaz</a></span>              
+              <span className='github'><a href='https://github.com/Merin-Yilmaz' target="_blank"><img src={github.src}/>Merin-Yilmaz</a></span>              
+              <span className='email'><a href='mailto: merin.yilmaz@gmail.com' target="_blank"><img src={email.src}/>merin.yilmaz@gmail.com</a></span>
             </div>
           </main>
     )
