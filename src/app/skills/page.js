@@ -20,7 +20,7 @@ const Skills = () => {
             <li>Paired Programming</li>   
             <li>Group Collaboration</li>     
             <li>Agile & SCRUM Methodologies</li>   
-            <li>Technical Commuincation</li>     
+            <li>Technical Communication</li>     
             </ul>   
         <motion.div initial={{ x: 0, opacity: 0}} animate={{ x: 0, opacity: 1}} transition={{ ease: 'easeInOut', duration: 0.85}} className="skills-icons">
             {iconList.map((icon, index) => (
