@@ -298,6 +298,16 @@
   z-index: 100;
 }
 
+.loading-container, .notfound-container, .error-container {
+  font-size: xx-large;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
 @media only screen and (max-width: 600px) {
   #layout {
     background-position-y: 0 !important;
