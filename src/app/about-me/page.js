@@ -22,9 +22,8 @@ const AboutMe = () => {
               <p>Hello! I am Merin and I am a Junior Software Developer from the UK. 
               <br></br>Before immersing myself into the world of software, I was a professional dog groomer!</p>
               <p>I have always had an interest for tech and wanted to try my hand at web development where I can get creative.
-              <br></br>I've had the privilege of completing an amazing Software Development bootcamp at Northcoders.</p> 
-              <p>When I'm not at the computer, I'm usually out on walks with my dog,
-              doing yoga or pole fitness.</p>
+              <br></br>I've recently had the privilege of completing an amazing Software Development bootcamp at Northcoders, where I learned so much about web technologies in a short amount of time.</p> 
+              <p>When I'm not at the computer, I'm usually out on walks with my dog, doing yoga or pole fitness.</p>
             </div>
             </div>
           </main>
