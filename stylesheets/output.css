@@ -3,6 +3,10 @@
   font-family: "Kalam";
 }
 
+a {
+  color: black;
+}
+
 .home {
   background-position-y: -100px;
 }
